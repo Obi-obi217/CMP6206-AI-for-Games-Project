@@ -14,27 +14,27 @@ public class Blind : MonoBehaviour
     {
         sm.Update();
 
-        if (Input.GetKeyDown(KeyCode.H) && stateIndex == 4)
+        if (Input.GetKeyDown(KeyCode.F) && stateIndex == 4)
         {
             sm.ChangeState(new IdleState(this));
             stateIndex = 0;
         }
-        if (Input.GetKeyDown(KeyCode.E) && (stateIndex == 0 || stateIndex == 2 || stateIndex == 4))
+        if (Input.GetKeyDown(KeyCode.G) && (stateIndex == 0 || stateIndex == 2 || stateIndex == 4))
         {
             sm.ChangeState(new AlertedState(this));
             stateIndex = 1;
         }
-        if (Input.GetKeyDown(KeyCode.R) && stateIndex == 1)
+        if (Input.GetKeyDown(KeyCode.H) && stateIndex == 1)
         {
             sm.ChangeState(new InvestigateState(this));
             stateIndex = 2;
         }
-        if (Input.GetKeyDown(KeyCode.R) && stateIndex == 2)
+        if (Input.GetKeyDown(KeyCode.J) && stateIndex == 2)
         {
             sm.ChangeState(new SearchState(this));
             stateIndex = 3;
         }
-        if (Input.GetKeyDown(KeyCode.R) && stateIndex == 3)
+        if (Input.GetKeyDown(KeyCode.K) && stateIndex == 3)
         {
             sm.ChangeState(new ReturningState(this));
             stateIndex = 4;
