@@ -2,11 +2,13 @@ using UnityEngine;
 
 public class Deaf : MonoBehaviour
 {
+    private Sight sightComp;
     StateManager sm = new StateManager();
     int stateIndex = 0;
     void Start()
     {
         sm.ChangeState(new MonitorState(this));
+
     }
 
     // Update is called once per frame
@@ -20,7 +22,7 @@ public class Deaf : MonoBehaviour
             sm.ChangeState(new MonitorState(this));
             stateIndex = 0;
         }
-        if (Input.GetKeyDown(KeyCode.E) && (stateIndex == 0 || stateIndex == 2))
+        if ((Input.GetKeyDown(KeyCode.E) || sightComp.CanSeePlayer()) && (stateIndex == 0 || stateIndex == 2))
         {
             sm.ChangeState(new DetectState(this));
             stateIndex = 1;
