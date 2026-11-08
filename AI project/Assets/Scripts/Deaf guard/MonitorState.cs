@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class MonitorState : State
 {
-    Agent owner;
-    public MonitorState(Agent owner)
+    Deaf owner;
+    public MonitorState(Deaf owner)
     {
         this.owner = owner;
     }

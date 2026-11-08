@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class LostState : State
 {
-    Agent owner;
-    public LostState(Agent owner)
+    Deaf owner;
+    public LostState(Deaf owner)
     {
         this.owner = owner;
     }

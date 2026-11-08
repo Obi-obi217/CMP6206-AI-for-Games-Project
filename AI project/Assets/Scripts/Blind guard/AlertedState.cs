@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class AlertedState : State
 {
-    Agent owner;
-    public AlertedState(Agent owner)
+    Blind owner;
+    public AlertedState(Blind owner)
     {
         this.owner = owner;
     }

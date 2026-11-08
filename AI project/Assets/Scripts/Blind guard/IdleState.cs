@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class IdleState : State
 {
-    Agent owner;
-    public IdleState(Agent owner)
+    Blind owner;
+    public IdleState(Blind owner)
     {
         this.owner = owner;
     }

@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class DetectState : State
 {
-    Agent owner;
-    public DetectState(Agent owner)
+    Deaf owner;
+    public DetectState(Deaf owner)
     {
         this.owner = owner;
     }

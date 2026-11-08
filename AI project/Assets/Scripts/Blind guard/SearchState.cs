@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class SearchState : State
 {
-    Agent owner;
-    public SearchState(Agent owner)
+    Blind owner;
+    public SearchState(Blind owner)
     {
         this.owner = owner;
     }

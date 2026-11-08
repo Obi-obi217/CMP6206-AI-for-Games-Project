@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class InvestigateState : State
 {
-    Agent owner;
-    public InvestigateState(Agent owner)
+    Blind owner;
+    public InvestigateState(Blind owner)
     {
         this.owner = owner;
     }
