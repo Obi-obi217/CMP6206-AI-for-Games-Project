@@ -1,23 +1,23 @@
 using UnityEngine;
 
-public class FleeState : State
+public class DetectState : State
 {
     Agent owner;
-    public FleeState(Agent owner)
+    public DetectState(Agent owner)
     {
         this.owner = owner;
     }
     public override void Enter()
     {
-        Debug.Log("Entering Flee State");
+        Debug.Log("Entering Detect State");
     }
     public override void Execute()
     {
-        Debug.Log("Executing Flee State");
+        Debug.Log("Executing Detect State");
     }
     public override void Exit()
     {
-        Debug.Log("Exiting Flee State");
+        Debug.Log("Exiting Detect State");
     }
 }
 

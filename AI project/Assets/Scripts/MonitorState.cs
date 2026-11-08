@@ -1,22 +1,22 @@
 using UnityEngine;
 
-public class IdleState : State
+public class MonitorState : State
 {
     Agent owner;
-    public IdleState(Agent owner)
+    public MonitorState(Agent owner)
     {
         this.owner = owner;
     }
     public override void Enter()
     {
-        Debug.Log("Entering Idle State");
+        Debug.Log("Entering Monitor State");
     }
     public override void Execute()
     {
-        Debug.Log("Executing Idle State");
+        Debug.Log("Executing Monitor State");
     }
     public override void Exit()
     {
-        Debug.Log("Exiting Idle State");
+        Debug.Log("Exiting Monitor State");
     }
 }

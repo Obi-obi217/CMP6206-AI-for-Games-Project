@@ -6,7 +6,7 @@ public class Agent : MonoBehaviour
     bool stateChange = false;
     void Start()
     {
-        sm.ChangeState(new IdleState(this));
+        sm.ChangeState(new MonitorState(this));
     }
 
     // Update is called once per frame
@@ -16,12 +16,12 @@ public class Agent : MonoBehaviour
         sm.Update();
         if (Input.GetKeyDown(KeyCode.Space) && !stateChange)
         {
-            sm.ChangeState(new FleeState(this));
+            sm.ChangeState(new DetectState(this));
             stateChange = true;
         }
         if (Input.GetKeyDown(KeyCode.E) && stateChange)
         {
-            sm.ChangeState(new IdleState(this));
+            sm.ChangeState(new MonitorState(this));
             stateChange = false;
         }
     }
