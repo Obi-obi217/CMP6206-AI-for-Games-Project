@@ -9,15 +9,15 @@ public class DetectState : State
     }
     public override void Enter()
     {
-        Debug.Log("Entering Detect State");
+        //Debug.Log("Entering Detect State");
     }
     public override void Execute()
     {
-        Debug.Log("Executing Detect State");
+        //Debug.Log("Executing Detect State");
     }
     public override void Exit()
     {
-        Debug.Log("Exiting Detect State");
+        //Debug.Log("Exiting Detect State");
     }
 }
 

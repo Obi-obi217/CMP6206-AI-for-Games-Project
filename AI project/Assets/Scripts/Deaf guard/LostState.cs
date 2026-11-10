@@ -9,15 +9,15 @@ public class LostState : State
     }
     public override void Enter()
     {
-        Debug.Log("Entering Lost State");
+        //Debug.Log("Entering Lost State");
     }
     public override void Execute()
     {
-        Debug.Log("Executing Lost State");
+        //Debug.Log("Executing Lost State");
     }
     public override void Exit()
     {
-        Debug.Log("Exiting Lost State");
+        //Debug.Log("Exiting Lost State");
     }
 }
 

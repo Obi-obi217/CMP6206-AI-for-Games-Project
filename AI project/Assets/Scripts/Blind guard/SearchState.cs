@@ -9,15 +9,15 @@ public class SearchState : State
     }
     public override void Enter()
     {
-        Debug.Log("Entering Search State");
+        //Debug.Log("Entering Search State");
     }
     public override void Execute()
     {
-        Debug.Log("Executing Search State");
+        //Debug.Log("Executing Search State");
     }
     public override void Exit()
     {
-        Debug.Log("Exiting Search State");
+        //Debug.Log("Exiting Search State");
     }
 }
 

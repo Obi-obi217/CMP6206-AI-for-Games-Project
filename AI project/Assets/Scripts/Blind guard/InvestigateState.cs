@@ -9,15 +9,15 @@ public class InvestigateState : State
     }
     public override void Enter()
     {
-        Debug.Log("Entering Investigate State");
+        //Debug.Log("Entering Investigate State");
     }
     public override void Execute()
     {
-        Debug.Log("Executing Investigate State");
+        //Debug.Log("Executing Investigate State");
     }
     public override void Exit()
     {
-        Debug.Log("Exiting Investigate State");
+        //Debug.Log("Exiting Investigate State");
     }
 }
 

@@ -10,7 +10,6 @@ public class StateManager
         {
             currState.Exit();
         }
-       //currState.Exit();
        currState = newState;
        newState.Enter();
     }

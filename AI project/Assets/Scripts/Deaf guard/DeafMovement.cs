@@ -6,31 +6,41 @@ public class DeafMovement : MonoBehaviour
     public float rotationLimit = 60f;
 
     private float startRotation;
+    private float scanTime;
+    private bool isRotating = true;
 
     void Start()
     {
         startRotation = transform.eulerAngles.y;
+        scanTime = rotationLimit;
     }
 
     void Update()
     {
-        float rotation = Mathf.Sin(Time.time * rotationSpeed * 0.01f) * rotationLimit;
+        if (isRotating)
+        {
+            scanTime += Time.deltaTime * rotationSpeed;
 
-        transform.eulerAngles = new Vector3(
-            transform.eulerAngles.x,
-            startRotation + rotation,
-            transform.eulerAngles.z
-        );
+            float rotation = Mathf.PingPong(scanTime, rotationLimit * 2)
+                             - rotationLimit;
+
+            transform.eulerAngles = new Vector3(
+                transform.eulerAngles.x,
+                startRotation + rotation,
+                transform.eulerAngles.z
+            );
+        }
+        //Debug.Log(isRotating);
     }
 
     public void StartRotation()
     {
-        rotationSpeed = 30f;
+        isRotating = true;
     }
 
     public void StopRotation()
     {
-        rotationSpeed = 0f;
+        isRotating = false;
     }
 }
 

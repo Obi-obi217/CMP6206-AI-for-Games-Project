@@ -9,14 +9,14 @@ public class MonitorState : State
     }
     public override void Enter()
     {
-        Debug.Log("Entering Monitor State");
+        
     }
     public override void Execute()
     {
-        Debug.Log("Executing Monitor State");
+        //Debug.Log("Executing Monitor State");
     }
     public override void Exit()
     {
-        Debug.Log("Exiting Monitor State");
+        //Debug.Log("Exiting Monitor State");
     }
 }

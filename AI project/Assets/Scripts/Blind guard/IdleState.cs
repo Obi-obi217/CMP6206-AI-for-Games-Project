@@ -9,15 +9,15 @@ public class IdleState : State
     }
     public override void Enter()
     {
-        Debug.Log("Entering Idle State");
+        //Debug.Log("Entering Idle State");
     }
     public override void Execute()
     {
-        Debug.Log("Executing Idle State");
+        //Debug.Log("Executing Idle State");
     }
     public override void Exit()
     {
-        Debug.Log("Exiting Idle State");
+        //Debug.Log("Exiting Idle State");
     }
 }
 
